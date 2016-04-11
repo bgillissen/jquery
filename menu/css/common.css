@@ -65,6 +65,6 @@ li > a.CSSmenu:hover {
   	cursor: pointer;
 }
 li.ddtrigger > a.CSSmenu:before {
-    content: "▽ ";
+    content: "▽";
     padding-right : 5px;
 }
