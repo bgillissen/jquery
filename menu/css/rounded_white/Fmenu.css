@@ -1,0 +1,46 @@
+/*Footer menu CSS rules */
+nav.Fmenu {
+   position: absolute;
+   bottom: 10px;
+   left: 50%;
+   -webkit-transform: translate(-50%, 0);
+   -ms-transform: translate(-50%, 0);
+   transform: translate(-50%, 0);
+}
+.Fmenu_root {
+  float :left;
+}
+li.Fmenu_root > a {
+  border-radius : 10px;
+}
+li.Fmenu_spacer {
+  min-width : 10px;
+}
+li:first-child > a.Fmenu {
+  border-top-left-radius : 10px;
+  border-top-right-radius : 10px;
+}
+li:last-child > a.Fmenu {
+  border-bottom-left-radius : 10px;
+  border-bottom-right-radius : 10px;
+}
+li > a.Fmenu {
+  display: block;
+  padding : 5px 5px 5px 5px;
+  background-color : white;  
+  color : black;
+}
+li > a.Fmenu[href="#"] {
+    text-decoration: none;
+}
+li > a.Fmenu:hover {
+  background-color : silver;
+  color : white;
+}
+li > a.Fmenu_active {
+  color :white;
+  background-color:gray; 
+}
+li > a.Fmenu_active:hover {
+  background-color:#D0D0D0;
+}

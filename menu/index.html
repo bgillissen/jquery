@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<link rel="stylesheet" type="text/css" href="css/common.css"/>
+	<link id="cssTmenu" rel="stylesheet" type="text/css" href="css/rounded_white/Tmenu.css"/>
+	<link id="cssLmenu" rel="stylesheet" type="text/css" href="css/rounded_white/Lmenu.css"/>
+	<link id="cssRmenu" rel="stylesheet" type="text/css" href="css/rounded_white/Rmenu.css"/>
+	<link id="cssFmenu" rel="stylesheet" type="text/css" href="css/rounded_white/Fmenu.css"/>
+	<script src="js/jquery-1.12.3.min.js"></script>
+	<script src="js/menu.js"></script>
+</head>
+<body>
+<nav class="CSSmenu">
+  <ul>
+    <li class="CSSmenu_root ddtrigger">
+      <a class="CSSmenu">Themes</a>
+      <ul class="dropdown">
+        <li><a id="rounded_white" class="CSSmenu">Rounded&nbsp;white</a></li>
+        <li><a id="square_silver" class="CSSmenu">Square&nbsp;silver</a></li>
+      </ul>
+    </li>    
+  </ul>
+</nav>
+
+<img id="preview"/>
+
+<nav class="Tmenu">
+  <ul>
+    <li class="Tmenu_root">
+      <a class="Tmenu">no child</a>
+    </li>
+    <li class="Tmenu_root Tmenu_spacer">&nbsp;</li>
+    <li class="Tmenu_root ddtrigger">
+      <a href="#" class="Tmenu Tmenu_active">dropdown</a>
+      <ul class="dropdown">
+        <li class="Tmenu drtrigger">
+          <ul class="dropright">
+            <li class="Tmenu"><a class="Tmenu">subone</a></li>
+            <li class="Tmenu"><a class="Tmenu Tmenu_active">subtwo</a></li>
+          </ul>
+          <a href="#" class="Tmenu Tmenu_active">dropright 1</a>
+        </li>
+        <li class="Tmenu"><a class="Tmenu">one</a></li>
+        <li class="Tmenu"><a class="Tmenu">two</a></li>
+        <li class="drtrigger">
+          <ul class="dropright">
+            <li class="Tmenu"><a class="Tmenu">subone</a></li>
+            <li class="drtrigger">
+              <ul class="dropright">
+                <li class="Tmenu"><a class="Tmenu">subsubone</a></li>
+                <li class="Tmenu"><a class="Tmenu">subsubtwo&nbsp;but&nbsp;a&nbsp;very&nbsp;long&nbsp;one</a></li>
+              </ul>
+              <a class="Tmenu" href="#">SubDropRight</a>
+            </li>
+            <li class="Tmenu"><a class="Tmenu">subtwo</a></li>
+          </ul>
+          <a class="Tmenu" href="#">dropright 2</a>
+        </li>
+      </ul>
+    </li>
+    <li class="Tmenu_root Tmenu_spacer">&nbsp;</li>
+    <li class="Tmenu_root ddtrigger">
+      <a class="Tmenu" href="#">dropdown 2 </a>
+      <ul class="dropdown">
+        <li class="Tmenu"><a class="Tmenu">one</a></li>
+        <li class="Tmenu"><a class="Tmenu">two</a></li>
+      </ul>
+    </li>
+    <li class="Tmenu_root Tmenu_spacer">&nbsp;</li>
+    <li class="Tmenu_root">
+      <a class="Tmenu">no child 2</a>
+    </li>
+  </ul>
+</nav>
+
+
+<nav class="Lmenu">
+  <ul>
+    <li class="Lmenu_root drtrigger">
+      <ul class="dropright">
+        <li><a class="Lmenu">one</a></li>
+        <li><a class="Lmenu Lmenu_active">two</a></li>
+      </ul>
+      <a class="Lmenu Lmenu_active" href="#">dropRight</a>
+    </li>
+    <li>
+      <a class="Lmenu">no child 1</a>
+    </li>
+    <li class="Lmenu_root drtrigger">
+      <ul class="dropright">
+        <li class="Lmenu"><a class="Lmenu">one</a></li>
+        <li class="drtrigger">
+          <ul class="dropright">
+            <li class="Lmenu"><a class="Lmenu">one</a></li>
+            <li class="Lmenu drtrigger">
+              <ul class="dropright">
+                <li class="Lmenu"><a class="Lmenu">one</a></li>
+                <li class="Lmenu"><a class="Lmenu">two</a></li>
+              </ul>
+              <a class="Lmenu" href="#">subSubDropRight</a>
+            </li>
+            <li class="Lmenu"><a class="Lmenu">two</a></li>
+          </ul>
+          <a class="Lmenu" href="#">subDropRight</a>
+        </li>
+      </ul>
+      <a class="Lmenu" href="#">dropRight 2</a>
+    </li>
+    <li class=Lmenu_root >
+      <a class="Lmenu">no child 2</a>
+    </li>
+  </ul>
+</nav>
+
+
+<nav class="Rmenu">
+  <ul>
+    <li class="Rmenu_root dltrigger">
+      <ul class="dropleft">
+        <li class="Rmenu"><a class="Rmenu">one</a></li>
+        <li class="Rmenu"><a class="Rmenu Rmenu_active">two</a></li>
+      </ul>
+      <a class="Rmenu Rmenu_active" href="#">dropLeft</a>
+    </li>
+    <li class="Rmenu_root">
+      <a class="Rmenu">no child 1</a>
+    </li>
+    <li class="dltrigger">
+      <ul class="dropleft">
+        <li class="Rmenu"><a class="Rmenu">one</a></li>
+        <li class="Rmenu dltrigger">
+          <ul class="dropleft">
+            <li class="Rmenu"><a class="Rmenu">one</a></li>
+            <li class="Rmenu dltrigger">
+              <ul class="dropleft">
+                <li class="Rmenu"><a class="Rmenu">one</a></li>
+                <li class="Rmenu"><a class="Rmenu">two</a></li>
+              </ul>
+              <a class="Rmenu" href="#">subSubDropLeft</a>
+            </li>
+            <li class="Rmenu"><a class="Rmenu">two</a></li>
+          </ul>
+          <a class="Rmenu" href="#">subDropLeft</a>
+        </li>
+      </ul>
+      <a class="Rmenu" href="#">dropLeft 2</a>
+    </li>   
+    <li class="Rmenu_root">
+      <a class="Rmenu">no child 2</a>
+    </li>
+  </ul>
+</nav>
+
+
+<nav class="Fmenu">
+  <ul>
+    <li class="Fmenu_root">
+      <a class="Fmenu">no child 1</a>
+    </li>
+    <li class="Fmenu_root Fmenu_spacer">&nbsp;</li>
+    <li class="Fmenu_root dutrigger">
+      <a href="#" class="Fmenu Fmenu_active">dropUp</a>
+      <ul class="dropup">
+        <li class="Fmenu drtrigger">
+          <ul class="dropright Fmenu">
+            <li class="Fmenu"><a class="Fmenu">subone</a></li>
+            <li class="Fmenu"><a class="Fmenu Fmenu_active">subtwo</a></li>
+            <li class="Fmenu"><a class="Fmenu">subtree</a></li>
+          </ul>
+          <a href="#" class="Fmenu Fmenu_active">dropright 1</a>
+        </li>
+        <li class="Fmenu drtrigger">
+          <ul class="dropright Fmenu">
+            <li class="Fmenu"><a class="Fmenu">subone</a></li>
+            <li class="Fmenu"><a class="Fmenu">subtwo</a></li>
+            <li class="Fmenu"><a class="Fmenu">subtree</a></li>
+            <li class="Fmenu"><a class="Fmenu">subfour</a></li>
+          </ul>
+          <a href="#" class="Fmenu">one</a>
+          </li>
+        <li class="Fmenu dltrigger">
+        	<ul class="dropleft Fmenu">
+            	<li class="Fmenu"><a class="Fmenu">subone</a></li>
+            	<li class="Fmenu"><a class="Fmenu">subtwo</a></li>
+            	<li class="Fmenu"><a class="Fmenu">subtree</a></li>
+            	<li class="Fmenu"><a class="Fmenu">subfour</a></li>
+          	</ul>
+        	<a href="#" class="Fmenu">two</a>
+        </li>
+        <li class="Fmenu drtrigger">
+          <ul class="dropright Fmenu">
+            <li class="Fmenu"><a class="Fmenu">subone</a></li>
+            <li class="Fmenu drtrigger">
+              <ul class="dropright Fmenu">
+                <li class="Fmenu"><a class="Fmenu">subsubone</a></li>
+                <li class="Fmenu"><a class="Fmenu">subsubtwo&nbsp;but&nbsp;a&nbsp;very&nbsp;long&nbsp;one</a></li>
+              </ul>
+              <a class="Fmenu" href="#">SubDropRight</a>
+            </li>
+            <li class="Fmenu"><a class="Fmenu">subtwo</a></li>
+          </ul>
+          <a class="Fmenu" href="#">dropright 2</a>
+        </li>
+      </ul>
+    </li>
+    <li class="Fmenu_root Fmenu_spacer">&nbsp;</li>
+    <li class="Fmenu_root dutrigger">
+      <a class="Fmenu" href="#">dropUp 2</a>
+      <ul class="dropup">
+        <li class="Fmenu"><a class="Fmenu">one</a></li>
+        <li class="Fmenu"><a class="Fmenu">two</a></li>
+        <li class="dltrigger">
+          <ul class="dropleft Fmenu">
+            <li class="Fmenu"><a class="Fmenu">subone</a></li>
+            <li class="Fmenu"><a class="Fmenu">subtwo</a></li>
+            <li class="Fmenu"><a class="Fmenu">subtree</a></li>
+            <li class="Fmenu"><a class="Fmenu">subfour</a></li>
+          </ul>
+          <a class="Fmenu" href="#">dropLeft</a>
+          </li>
+      </ul>
+    </li>
+    <li class="Fmenu_root Tmenu_spacer">&nbsp;</li>
+    <li class="Fmenu_root">
+      <a class="Fmenu">no child 2</a>
+    </li>
+  </ul>
+</nav>
+<script>
+	//to switch active theme
+	$("a.CSSmenu").click( function(){themeSwitch(this);} );
+	//to show a preview image of the theme
+	$("a.CSSmenu").mouseover( function(){themePreview(this);} );
+	//to hide the preview image
+	$("a.CSSmenu").mouseleave( function(){themePreview();} );
+	//To open dropDown menu entries
+	$(".ddtrigger").mouseover( function(){ menuSlide(this, 'dropdown', true, true);} );
+	//To close dropDown menu entries
+	$(".ddtrigger").mouseleave( function(){ menuSlide(this, 'dropdown', true, false);} );
+	//To open dropUp menu entries
+	$(".dutrigger").mouseover( function(){ menuSlide(this, 'dropup', true, true);} );
+	//To close dropUp menu entries
+	$(".dutrigger").mouseleave( function(){ menuSlide(this, 'dropup', true, false);} );
+	//To open dropRight menu entries
+	$(".drtrigger").mouseover( function(){ menuSlide(this, 'dropright', false, true);} );
+	//To close dropRight menu entries
+	$(".drtrigger").mouseleave( function (){ menuSlide(this, 'dropright', false, false);} );
+	//To open dropLeft menu entries
+	$(".dltrigger").mouseover( function(){ menuSlide(this, 'dropleft', false, true);} );
+	//To close dropLeft menu entries
+	$(".dltrigger").mouseleave( function (){ menuSlide(this, 'dropleft', false, false);} );
+</script>
+</body>
+</html>

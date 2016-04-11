@@ -1,0 +1,36 @@
+/*Left menu CSS rules */
+nav.Lmenu {
+   position: absolute;
+   top: 50%;
+   -webkit-transform: translate(0, -50%);
+   -ms-transform: translate(0, -50%);
+   transform: translate(0, -50%);
+}
+li > a.Lmenu {
+  display: block;
+  padding : 5px 5px 5px 5px;
+  background-color : white;  
+  color : black;
+}
+li > a.Lmenu[href="#"] {
+    text-decoration: none;
+}
+li:first-child > a.Lmenu {
+  border-top-left-radius : 10px;
+  border-top-right-radius : 10px;
+}
+li:last-child > a.Lmenu {
+  border-bottom-left-radius : 10px;
+  border-bottom-right-radius : 10px;
+}
+li > a.Lmenu:hover {
+  background-color : silver;
+  color : white;
+}
+li > a.Lmenu_active {
+  color :white;
+  background-color:gray; 
+}
+li > a.Lmenu_active:hover {
+  background-color:#D0D0D0;
+}

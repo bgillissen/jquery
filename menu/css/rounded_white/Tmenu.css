@@ -1,0 +1,45 @@
+/*Top menu CSS rules */
+nav.Tmenu {
+   position: absolute;
+   left: 50%;
+   -webkit-transform: translate(-50%, 0);
+   -ms-transform: translate(-50%, 0);
+   transform: translate(-50%, 0);
+}
+.Tmenu_root {
+  float :left;
+}
+li.Tmenu_root > a {
+  border-radius : 10px;
+}
+li.Tmenu_spacer {
+  min-width : 10px;
+}
+li:first-child > a.Tmenu {
+  border-top-left-radius : 10px;
+  border-top-right-radius : 10px;
+}
+li:last-child > a.Tmenu {
+  border-bottom-left-radius : 10px;
+  border-bottom-right-radius : 10px;
+}
+li > a.Tmenu {
+  display: block;
+  padding : 5px 5px 5px 5px;
+  background-color : white;  
+  color : black;
+}
+li > a.Tmenu[href="#"] {
+    text-decoration: none;
+}
+li > a.Tmenu:hover {
+  background-color : silver;
+  color : white;
+}
+li > a.Tmenu_active {
+  color :white;
+  background-color:gray; 
+}
+li > a.Tmenu_active:hover {
+  background-color:#D0D0D0;
+}

@@ -1,0 +1,70 @@
+body {
+	background-color: #f3f5f6;
+}
+a {
+	text-decoration: underline;
+}
+/* common menu css rule */
+ul {
+	list-style-type: none;
+	margin : 0px;
+	padding : 0px;
+}
+.dropdown {
+	display : none;
+  	overflow : hidden;
+ 	position : absolute;
+  	max-height : 0px;
+}
+.dropup {
+  	display : none;
+  	overflow : hidden;
+  	position : absolute;
+  	bottom: 100%;
+  	max-height : 0px;
+}
+.dropright {
+  	display : none;
+  	overflow : hidden;
+  	position : absolute;
+  	left : 100%;
+  	max-width : 0px;
+}
+.dropleft {
+  	display : none;
+  	overflow : hidden;
+  	position : absolute;
+  	right : 100%;
+  	max-width : 0px;
+}
+
+/* Theme preview css rules */
+#preview {
+  	position : absolute;
+  	top: 50%;
+  	left: 50%;
+  	transform: translate(-50%, -50%);
+  	display:none;
+  	width: 400px;
+  	height: 200px;
+}
+
+/* Theme Selector CSS rules */
+nav.CSSmenu {
+   	position: absolute;
+}
+li > a.CSSmenu {
+  	display: block;
+  	padding : 5px 5px 5px 5px;
+  	border-left : 1px solid black;
+  	background-color: #f3f5f6;
+  	color : black;
+  	text-decoration: none;
+}
+li > a.CSSmenu:hover {
+  	cursor: pointer;
+}
+li.ddtrigger > a.CSSmenu:before {
+    content: "▽ ";
+    padding-right : 5px;
+}

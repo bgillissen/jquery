@@ -1,0 +1,37 @@
+/* Right menu CSS rules*/
+nav.Rmenu {
+   position: absolute;
+   top: 50%;
+   -webkit-transform: translate(0, -50%);
+   -ms-transform: translate(0, -50%);
+   transform: translate(0, -50%);
+   right: 0%;
+}
+li > a.Rmenu {
+  display: block;
+  padding : 5px 5px 5px 5px;
+  background-color : white;  
+  color : black;
+}
+li > a.Rmenu[href="#"] {
+    text-decoration: none;
+}
+li:first-child > a.Rmenu {
+  border-top-left-radius : 10px;
+  border-top-right-radius : 10px;
+}
+li:last-child > a.Rmenu {
+  border-bottom-left-radius : 10px;
+  border-bottom-right-radius : 10px;
+}
+li > a.Rmenu:hover {
+  background-color : silver;
+  color : white;
+}
+li > a.Rmenu_active {
+  color :white;
+  background-color:gray; 
+}
+li > a.Rmenu_active:hover {
+  background-color:#D0D0D0;
+}

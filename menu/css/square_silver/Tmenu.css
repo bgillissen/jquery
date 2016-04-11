@@ -1,0 +1,56 @@
+/*Top menu CSS rules */
+nav.Tmenu {
+   position: absolute;
+   left: 50%;
+   -webkit-transform: translate(-50%, 0);
+   -ms-transform: translate(-50%, 0);
+   transform: translate(-50%, 0);
+}
+.Tmenu_root {
+  float :left;
+}
+li.Tmenu_root:hover > a {
+/*	border-bottom : 2px solid black;*/ 
+}
+li.Tmenu_spacer {
+  min-width : 10px;
+}
+li.Tmenu_root > ul > li:first-child > a.Tmenu {
+  border-top : 2px solid black;
+}
+li.Tmenu:first-child > a.Tmenu {
+  border-top : 2px solid black;
+}
+li > a.Tmenu {
+  display: block;
+  padding : 5px 5px 5px 5px;
+  background-color : silver;  
+  color : black;
+}
+li.ddtrigger > a.Tmenu:after {
+    content: "▽ ";
+    padding-left : 5px;
+}
+li.drtrigger > a.Tmenu:after {
+    content: "▶";
+    position : absolute;
+    right: 0%;
+    padding-left : 5px;
+    padding-right : 5px;
+}
+li.drtrigger > a.Tmenu {
+    padding-right : 30px;
+}
+li > a.Tmenu[href="#"] {
+    text-decoration: none;
+}
+li > a.Tmenu:hover {
+  color : white;
+}
+li > a.Tmenu_active {
+  color :white;
+  background-color:gray; 
+}
+li > a.Tmenu_active:hover {
+  background-color:#D0D0D0;
+}
