@@ -85,12 +85,11 @@ function menuPos(elem, childClass){
       father = $(father).parent();
   }
   if ( !ok ) return;
-  var container = $(elem).parent();
-  var childs = $(container).children("li");
+  var brothers = $(elem).parent().children("li");
   var height = 0;
-  for(var i=childs.length; i>0; i--){
-  	if ( childs[i] === elem ) break;
-  	height += $(childs[i]).height();
+  for(var i=brothers.length; i>0; i--){
+  	if ( brothers[i] === elem ) break;
+  	height += $(brothers[i]).height();
   }
   $(elem).children("." + childClass).css('bottom', "+" + height + "px");
   
