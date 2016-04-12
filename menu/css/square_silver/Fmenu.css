@@ -24,6 +24,7 @@ li > a.Fmenu {
   padding : 5px 5px 5px 5px;
   background-color : silver;  
   color : black;
+  height:  25px;
 }
 li.dutrigger > a.Fmenu:after {
     content: "△";

@@ -26,6 +26,7 @@ li > a.Tmenu {
   padding : 5px 5px 5px 5px;
   background-color : silver;  
   color : black;
+  height : 25px;
 }
 li.ddtrigger > a.Tmenu:after {
     content: "▽ ";
