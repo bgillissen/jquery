@@ -1,0 +1,69 @@
+/*Footer menu CSS rules */
+nav.Fmenu {
+   position: absolute;
+   bottom: 10px;
+   left: 50%;
+   -webkit-transform: translate(-50%, 0);
+   -ms-transform: translate(-50%, 0);
+   transform: translate(-50%, 0);
+}
+.Fmenu_root {
+  float :left;
+}
+li.Fmenu_spacer {
+  min-width : 10px;
+}
+li.Fmenu_root > ul > li:last-child > a.Fmenu {
+  border-bottom : 2px solid black;
+}
+li.Fmenu:last-child > a.Fmenu {
+  border-bottom : 2px solid black;
+}
+li > a.Fmenu {
+  display: block;
+  padding : 5px 5px 5px 5px;
+  background-color : silver;  
+  color : black;
+  height:  25px;
+}
+li.dutrigger > a.Fmenu:after {
+    content: "△";
+    padding-left : 5px;
+}
+li.drtrigger > a.Fmenu:after {
+    content: "▶";
+    position : absolute;
+    right: 0%;
+    padding-left : 5px;
+    padding-right : 5px;
+}
+li.drtrigger > a.Fmenu {
+    padding-right : 30px;
+}
+li.dltrigger > a.Fmenu:before {
+    content: "◀";
+    position : absolute;
+    left: 0%;
+    padding-left : 5px;
+    padding-right : 5px;
+}
+li.dltrigger > a.Fmenu {
+    padding-left : 30px;
+}
+li.dltrigger > a.Fmenu {
+    padding-right : 5px;
+    text-align: right;
+}
+li > a.Fmenu[href="#"] {
+    text-decoration: none;
+}
+li > a.Fmenu:hover {
+  	color : white;
+}
+li > a.Fmenu_active {
+  	color :white;
+  	background-color:gray; 
+}
+li > a.Fmenu_active:hover {
+  	background-color:#D0D0D0;
+}

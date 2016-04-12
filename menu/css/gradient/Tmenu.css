@@ -1,0 +1,66 @@
+/*Top menu CSS rules */
+nav.Tmenu {
+   position: absolute;
+   left: 50%;
+   -webkit-transform: translate(-50%, 0);
+   -ms-transform: translate(-50%, 0);
+   transform: translate(-50%, 0);
+}
+.Tmenu_root {
+  float :left;
+}
+li.Tmenu_root > a:hover {
+  background: linear-gradient(#F4FAFD, #C4CACD);
+}
+li.Tmenu_root > a {
+  background: linear-gradient(#C4CACD, #F4FAFD);
+}
+li > a.Tmenu {
+  display: block;
+  padding : 5px 5px 5px 5px;
+  color : black;
+  height : 25px;
+}
+li.Tmenu > a:hover {
+  background: linear-gradient(#F4FAFD, #C4CACD);
+}
+
+li.Tmenu_root > ul.dropdown {
+  background: linear-gradient(#C4CACD, #F4FAFD);
+}
+li.Tmenu > ul.dropright {
+  background: linear-gradient(#C4CACD, #F4FAFD);
+}
+li.Tmenu_spacer {
+  overflow : hidden;
+  max-width : 0px;
+}
+li.ddtrigger > a.Tmenu:after {
+    content: "▽";
+    padding-left : 5px;
+}
+li.drtrigger > a.Tmenu:after {
+    content: "▶";
+    position : absolute;
+    right: 0%;
+    padding-left : 5px;
+    padding-right : 5px;
+}
+li.drtrigger > a.Tmenu {
+    padding-right : 30px;
+}
+li > a.Tmenu[href="#"] {
+    text-decoration: none;
+}
+/*
+li > a.Tmenu:hover {
+  color : white;
+}
+li > a.Tmenu_active {
+  color :white;
+  background-color:gray; 
+}
+li > a.Tmenu_active:hover {
+  background-color:#D0D0D0;
+}
+*/
