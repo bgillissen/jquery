@@ -10,15 +10,14 @@ nav.Tmenu {
   float :left;
 }
 li.Tmenu_root > a:hover {
-  background: linear-gradient(#F4FAFD, #C4CACD);
-  background: -webkit-linear-gradient(#F4FAFD, #C4CACD);
-  background: -o-linear-gradient(#F4FAFD, #C4CACD);
+  	background: linear-gradient(#C4CACD, #F4FAFD);
+  	background: -webkit-linear-gradient(#C4CACD, #F4FAFD);
+  	background: -o-linear-gradient(#C4CACD, #F4FAFD);
 }
 li.Tmenu_root > a {
-  background: linear-gradient(#C4CACD, #F4FAFD);
-  background: -webkit-linear-gradient(#C4CACD, #F4FAFD);
-  background: -o-linear-gradient(#C4CACD, #F4FAFD);
-  
+	background: linear-gradient(#F4FAFD, #C4CACD);
+  	background: -webkit-linear-gradient(#F4FAFD, #C4CACD);
+  	background: -o-linear-gradient(#F4FAFD, #C4CACD);
 }
 li > a.Tmenu {
   display: block;
@@ -31,10 +30,10 @@ li.Tmenu > a:hover {
 }
 
 li.Tmenu_root > ul.dropdown {
-  background: linear-gradient(#C4CACD, #F4FAFD);
+  background: #C4CACD;
 }
 li.Tmenu > ul.dropright {
-  background: linear-gradient(#C4CACD, #F4FAFD);
+  background: #C4CACD;
 }
 li.Tmenu_spacer {
   overflow : hidden;
