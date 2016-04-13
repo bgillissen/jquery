@@ -56,6 +56,34 @@ li.drtrigger > a.Tmenu {
 li > a.Tmenu[href="#"] {
     text-decoration: none;
 }
+
+li.Tmenu_root:first-child > a.Tmenu_active {
+	border-left : 0px;
+	border-right : 1px solid gray;
+}
+li.Tmenu_root:last-child > a.Tmenu_active {
+	border-left : 1px solid gray;
+	border-right : 0px;
+}
+li.Tmenu_root > a.Tmenu_active {
+	border-left : 1px solid gray;
+	border-right : 1px solid gray;
+	background: linear-gradient(#C4CACD, #F4FAFD);
+}
+li.Tmenu:first-child > a.Tmenu_active {
+	border-top : 0px;
+	border-bottom : 1px solid gray;
+}
+li.Tmenu:last-child > a.Tmenu_active {
+	border-top : 1px solid gray;
+	border-bottom : 0px;
+}
+li.Tmenu > a.Tmenu_active {
+	border-bottom : 1px solid gray;
+	border-top : 1px solid gray;
+	background: #F4FAFD;
+}
+
 /*
 li > a.Tmenu:hover {
   color : white;
