@@ -9,31 +9,52 @@ nav.Tmenu {
 .Tmenu_root {
   float :left;
 }
-li.Tmenu_root > a:hover {
-  	background: linear-gradient(#C4CACD, #F4FAFD);
-  	background: -webkit-linear-gradient(#C4CACD, #F4FAFD);
-  	background: -o-linear-gradient(#C4CACD, #F4FAFD);
-}
-li.Tmenu_root > a {
-	background: linear-gradient(#F4FAFD, #C4CACD);
-  	background: -webkit-linear-gradient(#F4FAFD, #C4CACD);
-  	background: -o-linear-gradient(#F4FAFD, #C4CACD);
-}
 li > a.Tmenu {
-  display: block;
-  padding : 5px 5px 5px 5px;
-  color : black;
-  height : 25px;
-}
-li.Tmenu > a:hover {
-  background: linear-gradient(#F4FAFD, #C4CACD);
+	display: block;
+  	padding : 5px 15px 5px 15px;
+  	color : black;
+  	height : 25px;
 }
 
-li.Tmenu_root > ul.dropdown {
+li.Tmenu_root:first-child > a {
+	border-top-left-radius : 10px;
+	border-bottom-left-radius : 10px;
+}
+li.Tmenu_root:last-child > a {
+	border-top-right-radius : 10px;
+	border-bottom-right-radius : 10px;
+}
+li.Tmenu:last-child > a {
+	border-bottom-left-radius : 10px;
+	border-bottom-right-radius : 10px;
+}
+ul.dropright > li.Tmenu:first-child > a.Tmenu {
+	border-top-right-radius : 10px;
+}
+li.Tmenu_root > ul {
+	box-shadow: 5px 5px 5px #888888;
+	border-bottom-left-radius : 10px;
+	border-bottom-right-radius : 10px;
+}
+li.Tmenu > ul {
+	box-shadow: 5px 5px 5px #888888;
+	border-bottom-left-radius : 10px;
+	border-bottom-right-radius : 10px;
+	border-top-right-radius : 10px;
+}
+
+li.Tmenu_root > a:hover {
+  	background: linear-gradient(#FFFFFF, #C4CACD);
+}
+li.Tmenu_root > a {
+	background: linear-gradient(#F4FAFD, #A4AAAD);
+}
+
+li.Tmenu > a {
   background: #C4CACD;
 }
-li.Tmenu > ul.dropright {
-  background: #C4CACD;
+li.Tmenu > a:hover {
+  	background: #B0B6B9;
 }
 li.Tmenu_spacer {
   overflow : hidden;
@@ -70,29 +91,26 @@ li.Tmenu_root > a.Tmenu_active {
 	border-right : 1px solid gray;
 	background: linear-gradient(#C4CACD, #F4FAFD);
 }
+li.Tmenu_root > a.Tmenu_active:hover {
+	background: linear-gradient(#C4CACD, #FFFFFF);
+}
 li.Tmenu:first-child > a.Tmenu_active {
 	border-top : 0px;
 	border-bottom : 1px solid gray;
 }
+
 li.Tmenu:last-child > a.Tmenu_active {
 	border-top : 1px solid gray;
 	border-bottom : 0px;
 }
+
 li.Tmenu > a.Tmenu_active {
 	border-bottom : 1px solid gray;
 	border-top : 1px solid gray;
 	background: #F4FAFD;
 }
+li.Tmenu > a.Tmenu_active:hover {
+	background: #FFFFFF;
+}
 
-/*
-li > a.Tmenu:hover {
-  color : white;
-}
-li > a.Tmenu_active {
-  color :white;
-  background-color:gray; 
-}
-li > a.Tmenu_active:hover {
-  background-color:#D0D0D0;
-}
-*/
+

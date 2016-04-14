@@ -10,22 +10,105 @@ nav.Fmenu {
 .Fmenu_root {
   float :left;
 }
-li.Fmenu_spacer {
-  min-width : 10px;
-}
-li.Fmenu_root > ul > li:last-child > a.Fmenu {
-  border-bottom : 2px solid black;
-}
-li.Fmenu:last-child > a.Fmenu {
-  border-bottom : 2px solid black;
-}
-li > a.Fmenu {
+a.Fmenu {
   display: block;
-  padding : 5px 5px 5px 5px;
-  background-color : silver;  
+  padding : 5px 15px 5px 15px; 
   color : black;
   height:  25px;
 }
+li.Fmenu_spacer {
+  max-width : 0px;
+  overflow: hidden;
+}
+
+li.Fmenu_root:first-child > a {
+	border-top-left-radius : 10px;
+	border-bottom-left-radius : 10px;
+}
+li.Fmenu_root:last-child > a {
+	border-top-right-radius : 10px;
+	border-bottom-right-radius : 10px;
+}
+li.Fmenu:first-child > a {
+	border-top-left-radius : 10px;
+	border-top-right-radius : 10px;
+}
+ul.dropright > li.Fmenu:first-child > a {
+	border-top-right-radius : 10px;
+}
+ul.dropright > li.Fmenu:last-child > a {
+	border-bottom-right-radius : 10px;
+}
+ul.dropleft > li.Fmenu:first-child > a {
+	border-top-left-radius : 10px;
+}
+ul.dropleft > li.Fmenu:last-child > a {
+	border-bottom-left-radius : 10px;
+}
+li.Fmenu_root > ul {
+	box-shadow: 5px -5px 5px #888888;
+	border-top-left-radius : 10px;
+	border-top-right-radius : 10px;
+}
+li.drtrigger > ul.Fmenu {
+	box-shadow: 5px -5px 5px #888888;
+	border-top-left-radius : 10px;
+	border-bottom-right-radius : 10px;
+	border-top-right-radius : 10px;
+}
+li.dltrigger > ul.Fmenu {
+	box-shadow: -5px -5px 5px #888888;
+	border-top-left-radius : 10px;
+	border-bottom-left-radius : 10px;
+	border-top-right-radius : 10px;
+}
+
+li.Fmenu_root > a:hover {
+  	background: linear-gradient(#FFFFFF, #C4CACD);
+}
+li.Fmenu_root > a {
+	background: linear-gradient(#F4FAFD, #A4AAAD);
+}
+li.Fmenu > a {
+	background: #C4CACD;
+}
+li.Fmenu > a:hover {
+	background: #B0B6B9;
+}
+
+li.Fmenu_root:first-child > a.Fmenu_active {
+	border-left : 0px;
+	border-right : 1px solid gray;
+}
+li.Fmenu_root:last-child > a.Fmenu_active {
+	border-left : 1px solid gray;
+	border-right : 0px;
+}
+li.Fmenu_root > a.Fmenu_active {
+	border-left : 1px solid gray;
+	border-right : 1px solid gray;
+	background: linear-gradient(#C4CACD, #F4FAFD);
+}
+li.Fmenu > a.Fmenu_active {
+	border-bottom : 1px solid gray;
+	border-top : 1px solid gray;
+	background: #F4FAFD;
+}
+li.Fmenu > a.Fmenu_active:hover {
+	background: #FFFFFF;
+}
+li.Fmenu:first-child > a.Tmenu_active {
+	border-top : 0px;
+	border-bottom : 1px solid gray;
+}
+
+li.Fmenu:last-child > a.Tmenu_active {
+	border-top : 1px solid gray;
+	border-bottom : 0px;
+}
+
+
+
 li.dutrigger > a.Fmenu:after {
     content: "△";
     padding-left : 5px;
@@ -56,14 +139,4 @@ li.dltrigger > a.Fmenu {
 }
 li > a.Fmenu[href="#"] {
     text-decoration: none;
-}
-li > a.Fmenu:hover {
-  	color : white;
-}
-li > a.Fmenu_active {
-  	color :white;
-  	background-color:gray; 
-}
-li > a.Fmenu_active:hover {
-  	background-color:#D0D0D0;
 }
